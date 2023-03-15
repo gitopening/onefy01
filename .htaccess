@@ -13,6 +13,7 @@ RewriteRule ^index\.htm$ /citylist.php [L]
 
 # RewriteRule ^softzjb/?$ /softzjb/index.php [L]
 RewriteRule ^(softzjb|softmenu|gamemenu)/?$ /softzjb/index.php?column=$1 [L]
+RewriteRule ^(softzjb|softmenu|gamemenu)/soft_(.*?).html /softzjb/index.php?column=$1 [L]
 # Apache中的伪静态 路径配置
 #RewriteRule zhoujingbao_com/index.html$ /zhoujingbao_com/index.html [L]
 
