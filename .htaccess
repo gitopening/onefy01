@@ -11,6 +11,11 @@ RewriteRule ^(.*)$ https://www.01fy.cn/$1 [L]
 RewriteRule ^index\.html$ /index.php [L]
 RewriteRule ^index\.htm$ /citylist.php [L]
 
+# RewriteRule ^softzjb/?$ /softzjb/index.php [L]
+RewriteRule ^(softzjb|softmenu|gamemenu)/?$ /softzjb/index.php?column=$1 [L]
+# Apache中的伪静态 路径配置
+#RewriteRule zhoujingbao_com/index.html$ /zhoujingbao_com/index.html [L]
+
 RewriteRule ^(rent|xzlcz|spcz|cwcz|cwzr|cfcz|cfzr|ckcz|ckzr)/?$ /rent/index.php?column=$1 [L]
 RewriteRule ^(rent|xzlcz|spcz|cwcz|cwzr|cfcz|cfzr|ckcz|ckzr)/list_(.*?).html /rent/index.php?column=$1&param=$2 [L]
 RewriteRule ^(rent|xzlcz|spcz|cwcz|cwzr|cfcz|cfzr|ckcz|ckzr)/house_(\d+)(x?)\.html$ /rent/detail.php?column=$1&id=$2&member_db=$3 [L]
