@@ -24,6 +24,7 @@ if ($trueCityId > 0){
             }
         }*/
         require_once(dirname(__FILE__).'/citylist.php');
+         // require_once(dirname(__FILE__).'/sale/zjbcn/indexzjb.html');
         exit();
     }elseif ($url_name == 'www' && !empty($jump_url_name) && $jump_url_name != 'www'){
         header('Location://'.$jump_url_name.'.'.$cfg['page']['basehost'] . $_SERVER['REQUEST_URI']);
