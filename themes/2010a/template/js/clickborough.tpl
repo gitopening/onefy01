@@ -1,0 +1,3 @@
+<!--{foreach from=$clickborough key=key item=item}-->
+document.write('<li><a href="<!--{$cfg.url_newHouse}-->d-<!--{$item.id}-->.html" target="_blank" class="se_5"><!--{$item.borough_name}--></a><span class="v_font r3_r_price"><!--{if $item.borough_avgprice}--><!--{$item.borough_avgprice}--><!--{else}-->待定<!--{/if}--></span><span class="v_font r3_r_phone over_hidden"><!--{if $item.sell_phone}--><!--{$item.sell_phone}--><!--{else}-->-- --<!--{/if}--></span></li>');
+<!--{/foreach}-->

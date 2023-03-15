@@ -1,0 +1,36 @@
+@charset "gb2312";
+/* style for broker */
+.brokerItem { width:728px; border:1px solid #bababa; margin-bottom:15px; }
+.brokerItem .horizon { float:left; }
+.brokerItem .brokerPhoto { margin:10px 0 5px 10px; display:inline; }
+.brokerPhoto span.photo { display:block; width:100px; height:120px; padding:1px; border:1px solid #c0c0c0; margin-bottom:5px; }
+.brokerPhoto .name { margin-right:5px; }
+.brokerItem .houseList { width:282px; height:140px; margin-top:10px; }
+.houseList li.listTitle { margin-bottom:10px; }
+.houseList li.listTitle a { color:#f90; }
+.houseList li.listItem { padding-bottom:6px; margin-top:10px; background:url(../images/dotBg.gif) repeat-x left bottom; }
+.houseList li.listItem p { line-height:150%; }
+.houseList li.listItem p.houseInfo { font-family:verdana, "宋体", sans-serif; color:#999; }
+.brokerItem .saleList { margin-left:10px; }
+.brokerItem .rentList { margin-left:25px; }
+.brokerItem .brokerInfo { clear:left; height:27px; background:#ffd; border-top:1px solid #fc6; }
+.brokerInfo li { float:left; font-family:verdana, "宋体", sans-serif; margin-left:15px; padding-top:8px; display:inline; }
+.brokerInfo li.validate { padding-top:6px; margin-left:10px; }
+.brokerInfo li.rank { padding-top:8px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

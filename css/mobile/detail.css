@@ -1,0 +1,455 @@
+#picture-box{
+    margin: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 260px;
+    z-index: 109;
+}
+#picture-box #container{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    height: 100%;
+}
+#picture-box #pic-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /*-webkit-transition: left 0.5s;*/
+    /*-moz-transition: left 0.5s;*/
+    /*-ms-transition: left 0.5s;*/
+    /*-o-transition: left 0.5s;*/
+    /*transition: left 0.5s;*/
+}
+#picture-box #pic-counter{
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+    z-index: 10;
+    color: #FFF;
+    font-size: 16px;
+}
+#picture-box #pic-list .item{
+    height: 260px;
+    background: url(/images/housePhotoDefault.gif) no-repeat scroll center center;
+    background-size: cover;
+    float: left;
+}
+#left-arrow, #right-arrow{
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 101;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFF;
+    cursor: pointer;
+}
+#left-arrow{
+    left: 10px;
+}
+#right-arrow{
+    right: 10px;
+}
+#left-arrow i, #right-arrow i{
+    width: 40px;
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    top: 6px;
+}
+#left-arrow i{
+    transform: rotate(180deg);
+    top: 9px;
+}
+#house-title{
+    font-size: 24px;
+    padding: 0 15px;
+    line-height: 1.5em;
+    color: #333;
+    margin: 15px 0 0;
+}
+.section-title {
+    font-size: 24px;
+    padding: 10px 15px 0;
+    line-height: 1.5em;
+    color: #333;
+    margin: 10px 0 0;
+    text-align: center;
+}
+#house-content{
+    font-size: 18px;
+    line-height: 1.75em;
+    color: #333;
+    padding: 0 10px;
+}
+.section-box{
+    margin-top: 20px;
+    padding: 10px 15px;
+}
+.section-box h2{
+    margin: 0 0 15px;
+    font-size: 18px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #CCC;
+}
+.section-box .item{
+    line-height: 1.8em;
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+.section-box .item .caption{
+    width: 4em;
+    text-align: right;
+    padding-right: 15px;
+}
+.contact-face{
+    /*background: url(/images/demoPhoto.jpg) no-repeat scroll center center;*/
+    /*background-size: cover;*/
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.contact-name a{
+    text-decoration: none;
+    color: #333;
+}
+.house-price-box{
+    padding: 20px 10px;
+    background-color: #F9F9F9;
+    margin: 20px 15px 0;
+    border-bottom: 1px solid #DDD;
+}
+.house-price-box .caption{
+    font-size: 16px;
+}
+.house-price-box .house-price{
+    font-size: 24px;
+    font-weight: normal;
+    color: #333;
+}
+.house-price-box .house-price span{
+    font-size: 28px;
+    /*font-weight: bold;*/
+    color: #333;
+}
+.house-price-box .house-price span{
+    margin: 0 5px;
+}
+#broker-face-box{
+    /*margin-top: 50px;*/
+    min-height: 180px;
+    padding: 30px 0;
+    text-align: center;
+    background: url(/images/mobile_broker_shop_bg.jpg) no-repeat scroll center center;
+    background-size: cover;
+}
+#broker-face-box img{
+    width: 200px;
+    background-color: #FFF;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 3px solid #FFF;
+}
+#broker-name{
+    padding: 10px 15px;
+    font-size: 24px;
+    margin-bottom: 0;
+    text-align: center;
+}
+#broker-info{
+    margin-top: 5px;
+    padding: 0;
+}
+#broker-info .item:first-child{
+    border-top: 1px solid #CCC;
+}
+.introduce {
+    font-size:18px;
+    line-height: 1.75em;
+}
+#house-detail{
+    padding: 0;
+    margin: 0;
+}
+#house-detail .item, #broker-info .item{
+    border-bottom: 1px solid #DDD;
+    margin: 0 15px;
+    padding: 5px 10px;
+}
+#house-detail .item:nth-child(even), #broker-info .item:nth-child(even){
+    background-color: #F9F9F9;
+}
+.contact-me {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #003663;
+    color: #FFF;
+    font-size: 24px;
+    margin: 25px 20px;
+    letter-spacing: 5px;
+    background-image: linear-gradient(to bottom,#236ab7 0,#003663 100%);
+    text-shadow: #000 2px 1px 0;
+}
+.contact-me a{
+    display: block;
+    color: #FFF;
+    padding: 12px 35px;
+    text-align: center;
+    text-decoration: none;
+}
+#article-title{
+    padding: 8px 15px;
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+.article-info{
+    font-size: 14px;
+    color: #999;
+    padding: 0 15px;
+}
+#article-content{
+    font-size: 18px;
+    color: #333;
+    line-height: 1.75em;
+    padding: 30px 15px;
+}
+#article-content img{
+    max-width: 100%;
+}
+#article-content table {
+    max-width: 100% !important;
+}
+.suggest-box{
+    padding: 0 15px;
+}
+.suggest-title{
+    margin: 0 0 25px;
+    font-size: 24px;
+    text-align: center;
+}
+.suggest-tips{
+    color: #999;
+    line-height: 1.5em;
+    font-size: 14px;
+}
+.suggest-box .item{
+    margin: 30px 0;
+    font-size: 16px;
+    color: #333;
+}
+.suggest-box .item .title{
+    margin-bottom: 5px;
+    color: #333;
+}
+.suggest-box .new-input .control-wrap{
+    border: 1px solid #999;
+    padding: 2px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.suggest-box .new-input textarea, .suggest-box .new-input input{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 100%;
+    font-size:18px;
+}
+.red-tips{
+    font-size: 14px;
+    color: #999;
+}
+.tips{
+    font-size: 14px;
+    color: #999;
+}
+.suggest-box .vcode-wrap{
+    margin-right: 20px;
+}
+.suggest-box #valid_pic{
+    height: 30px;
+    position: relative;
+    top: -3px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.suggest-box #tel {
+    float: left;
+    width: 60%;
+}
+.suggest-box #sendauthcode {
+    border: 1px solid #999;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #EFEFEF;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 140px;
+    margin-bottom: 10px;
+}
+.submit-btn{
+    border: none;
+    text-align: center;
+    padding: 10px;
+    height: 33px;
+    line-height: 33px;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 16px;
+    margin: 25px 0;
+    background-image: linear-gradient(to bottom,#236ab7 0,#003663 100%);
+    text-shadow: #000 2px 1px 0;
+}
+.publish-time {
+    padding: 10px 15px;
+    color: #666;
+}
+.tool-bar{
+    padding: 0 15px;
+    text-align: left;
+}
+.tool-bar i{
+    margin-right: 5px;
+}
+.tool-bar .icon-delete{
+    font-size: 11px;
+}
+.tool-bar a{
+    color: #666;
+    margin-right: 35px;
+    font-size: 12px;
+}
+.tool-bar a:hover{
+    color: red;
+}
+.section-tips {
+    margin: 15px 15px 35px;
+    padding: 10px;
+    color: red;
+    line-height: 1.8em;
+    border: 1px solid #CCC;
+    background-color: #F9F9F9;
+}
+#delete-box .item .caption{
+    width: 5.2em;
+    text-align: right;
+}
+#delete-box .item .control-wrap{
+    width: 60px;
+    padding: 3px 12px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #CCC;
+    margin-right: 10px;
+}
+#delete-box .item .control-wrap input {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+}
+#delete-box #valid_pic{
+    height: 28px;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+#delete-box #sendauthcode {
+    margin: 2px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 3px 10px;
+    background-color: #003663;
+    color: #FFFFFF;
+    text-align: center;
+    width: 110px;
+}
+#delete-box .submit-btn{
+    width: auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 24px;
+    margin: 25px 0;
+    letter-spacing: 5px;
+    background-image: linear-gradient(to bottom,#236ab7 0,#003663 100%);
+    text-shadow: #000 2px 1px 0;
+}
+.submit_btn {
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 31px;
+    line-height: 31px;
+    width: 120px;
+    color: #333;
+    margin: 0 auto;
+    padding: 0;
+    outline: none;
+    font-size: 14px;
+}
+.delete-success {
+    padding: 35px 0;
+    width: 260px;
+    margin: 0 auto;
+}
+.delete-success span{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+.delete-success i{
+    font-size: 48px;
+    color: #7EB03B;
+    margin-right: 20px;
+}
+.suggest-box .report-type label{
+    clear: both;
+    display: block;
+    margin: 12px 0;
+}
+#vcode{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+/*内容区中部广告位*/
+.ad-pos-wrap{
+    height: 26em;
+    float: left;
+}
+.middle-ad{
+    float: left;
+    clear: left;
+    width: 100%;
+    text-align: center;
+    margin: 15px auto;
+    overflow: hidden;
+}

@@ -1,0 +1,153 @@
+* { padding: 0; margin: 0; }
+
+/**********************************************************
+ * 基本样式
+ **********************************************************/
+
+html,body {
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+}
+
+body {
+	color: #000;
+	background-color: #fff;
+	text-align: center;
+	font-size: 12px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+a {
+	color: #2366a8;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #e79d35;
+}
+
+
+/** 表单 */
+
+textarea, input, select{
+	padding: 2px;
+	border: 1px solid;
+	border-color: #666 #ccc #ccc #666;
+	background: #f9f9f9;
+	color: #333;
+	margin: 2px;
+}
+
+.txt, select {
+	vertical-align:middle;
+}
+
+.txt:hover, .txt:focus, textarea:hover, textarea:focus {
+	border-color: #09c;
+	background: #f5f9fd;
+}
+
+.btn {
+	margin: 3px 0;
+	padding: 2px 5px;
+	*padding: 4px 5px 1px;
+	border-color: #ddd #666 #666 #ddd;
+	background: #ddd;
+	color: #000;
+	cursor: pointer;
+	vertical-align: middle;
+}
+	
+/** /表单 */
+
+
+/** 登录表单 */
+
+.logintb {
+	text-align: left;
+	margin: 120px auto 0;
+	width: 600px;
+}
+
+.login {
+	padding-right: 30px;
+	width: 310px;
+	height: 180px;
+	background: url(../images/admin/bg_login.gif) right 50% no-repeat;
+}
+
+.login h1 {
+	text-indent: -9999px;
+	margin-bottom: 10px;
+	width: 262px;
+	height: 60px;
+	background: url(../images/admin/logo.gif) no-repeat;
+}
+
+.login p {
+	line-height:120%;
+}
+
+.logintitle {
+	float:left;
+	clear:left;
+	width:60px;
+	line-height:180%;
+	font-weight:700;
+	font-size:14px;
+	color:#666;
+}
+
+.loginform {
+	float: left;
+	line-height: 180%;
+	font-size: 14px;
+	width: 160px;
+}
+
+.loginform .txt {
+	margin-top:2px;
+	width:160px;
+}
+
+.loginform select {
+	width: 166px;
+}
+
+.loginnofloat {
+	clear:both;
+}
+
+.loginnofloat .btn {
+	margin-left:60px;
+}
+
+.logintips {
+	line-height: 160%;
+	margin-left: 25px;
+}
+
+.logintips a {
+	margin:0 5px;
+	text-decoration:underline;
+}
+
+.footer {
+}
+
+.footer .copyright {
+	position: static;
+	margin-top: 120px;
+	border: none;
+	text-align: center;
+	font-size: 12px;
+}
+
+.footer p {
+	display:inline;
+}
+
+/** /登录表单 */
+
+

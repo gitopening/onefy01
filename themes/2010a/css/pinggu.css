@@ -1,0 +1,38 @@
+@charset "gb2312";
+/* style for Pinggu */
+.topicBg { width:100%; height:30px; background:#fc6; }
+.topicText { display:block; width:100%; height:21px; font-size:16px; font-weight:bold; color:#c60; padding:7px 0 0 10px; background:#ffd; }
+
+.leftBg { width:100%; }
+.leftBg p { color:#333; font-size:12px; margin:18px 0 0 25px; background:url(../images/dotBg.gif) repeat-x left bottom; padding-bottom:10px; }
+.leftBg p span.itemTitle { font-weight:bold; font-size:14px; }
+.leftBg p span .input { font-size:14px; color:#999; border:1px solid #999; height:17px; padding:3px 0 0 3px; }
+.pgBtn { float:right; margin:10px 0 0; }
+.pgBtn input { width:78px; height:32px; background:url(../images/pgIndexBtn.gif) no-repeat; }
+.pgBtn input.moreBtn { width:78px; height:32px; background:url(../images/pgMoreBtn.gif) no-repeat; }
+.pgBtn input.modifyBtn { width:78px; height:32px; background:url(../images/pgModifyBtn.gif) no-repeat; }
+
+.initialTip { width:718px; padding:0 5px 7px; border:1px solid #ccc; background:#f7f7f7; margin-bottom:10px; }
+.initialTip p { color:#000; margin-top:10px; }
+
+.reportBox { width:698px; padding:15px; border:1px solid #ccc; margin-bottom:10px; text-align:center; color:#000; }
+.reportHeader { padding-bottom:5px; background:url(../images/dotBg.gif) repeat-x left bottom; }
+.reportHeader p { margin-bottom:10px; }
+.reportBody { margin-top:15px; }
+.reportBody p { margin-bottom:10px; }
+.reportTip { color:#bbb; padding-top:10px; margin-bottom:0; }
+
+.familyBlack { font-family:"黑体", "宋体"; letter-spacing:-2px; }
+.size23px { font-size:23px; }
+
+/* communityMainRec */
+.communityMainRecBox { float:left; *float:none; width:728px; border:1px solid #bababa; margin-top:10px; }
+.communityMainRecBox .communityMainRecTitleBox { width:100%; height:27px; background:url(../images/barDotBg.gif) repeat-x; }
+.communityMainRecTitleBox .communityMainRecTitle { float:left; margin-top:6px; margin-left:8px; }
+.communityMainRecTitleBox .communityMainRecMore { float:right; margin-top:6px; margin-right:8px; }
+.communityMainRecBox table.communityFile { width:90%; margin-top:10px; margin-left:10px;  }
+table.communityFile tr td { padding:5px; }
+table.communityFile tr td.title { text-align:right; background:#e9e9e9; }
+.communityMainRecBox table.communityPhoto { width:100%; margin-top:10px; }
+table.communityPhoto td { text-align:center; }
+table.communityPhoto td span { display:block; width:210px; height:158px; padding:5px; border:1px solid #bababa; }

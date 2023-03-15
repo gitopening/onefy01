@@ -1,0 +1,3 @@
+<!--{foreach from=$commendborough key=key item=item}-->
+document.write('<li><a href="<!--{$cfg.url_newHouse}-->d-<!--{$item.id}-->.html" target="_blank"><img src="<!--{if $item.borough_thumb}--><!--{$cfg.url}-->upfile/<!--{$item.borough_thumb}--><!--{else}--><!--{$cfg.path.images}-->demoNewHouse.jpg<!--{/if}-->" width="140" height="105" alt="<!--{$item.borough_name}-->" /></a><h3><a href="<!--{$cfg.url_newHouse}-->d-<!--{$item.id}-->.html" class="se_5" target="_blank"><!--{$item.borough_name}--></a></h3><p>均价：<span><!--{if $item.borough_avgprice}--><!--{$item.borough_avgprice}--><!--{else}-->待定<!--{/if}--></span><br />售楼电话：<!--{$item.sell_phone}--> </p></li>');
+<!--{/foreach}-->

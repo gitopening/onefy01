@@ -1,0 +1,164 @@
+@charset "gb2312";
+/* style Common */
+* { margin:0; padding:0; border:0; }
+body { font-family:"宋体", sans-serif; font-size:12px; color:#666; text-align:left; }
+div,span,ul,li { overflow:hidden; }
+li {list-style:none;}
+
+/* CommonFont */
+.familyAlpha { font-family:verdana, "宋体", sans-serif; }
+.familyArial { font-family:Arial; }
+.weightBold { font-weight:bold; }
+.size10px { font-size:10px; }
+.size14px { font-size:14px; }
+.size16px { font-size:16px; }
+.size18px { font-size:18px; }
+.size24px { font-size:24px; }
+.color000 { color:#000; }
+.color333 { color:#333; }
+.color999 { color:#999; }
+.colorC00 { color:#c00; }
+.colorF90 { color:#f90; }
+.colorF60 { color:#f60; }
+.color690 { color:#690; }
+
+/* commonLink */
+a { color:#666; text-decoration:none; }
+a:hover { color:#f90; text-decoration:underline; }
+
+.aUnderline { text-decoration:underline; }
+
+/* commonHeader */
+#header { width:100%; padding-top:10px; }
+#logo { width:280px; height:34px; display:block; margin-left:auto; _margin-left:auto; margin-right:auto; _margin-right:auto; background:url(../images/logo.gif) no-repeat; padding-top:20px }
+
+#navTop { padding-top:10px; width:100%;}
+#navTop ul li {  float:left; margin-left:5px; }
+
+
+
+#navMainBox { float:left; *float:none; width:100%; height:34px; margin-top:15px; }
+#navMainBox .navMainBorderLeft { float:left; width:2px; height:34px; background:url(../images/navMainBg.gif) no-repeat left top; }
+#navMainBox .navMainBg { float:left; width:946px; height:34px; background:url(../images/navMainBg.gif) repeat-x left bottom; }
+#navMainBox .navMainBorderRight { float:left; width:2px; height:34px; background:url(../images/navMainBg.gif) no-repeat right top; }
+/* myFangkeHiddenLayer */
+#myFangkeHiddenLayer { position:absolute; width:66px; border:1px solid #fff5bf; background:#fffbe5; left:238px; top:25px; *left:238px; *top:24px; display:none; }
+#myFangkeHiddenLayer ul li { margin:4px 0 2px 9px; }
+/* navMain */
+.navMain { float:left; margin-left:60px; display:inline; }
+.navMain li { float:left; width:89px; height:34px; padding-right:2px; background:url(../images/navMainLinkSplit.gif) no-repeat; text-align:center; display:inline; }
+.navMain li a { float:left; width:100%; font-size:14px; color:#fff; line-height:39px; _line-height:42px; padding:auto 12px; }
+.navMain li a:hover { color:#fff; text-decoration:underline; }
+.navMain li.linkOn { background:url(../images/navMainLinkOnBg.gif) no-repeat; margin-left:-2px; }
+.navMain li.linkOn a { color:#000; font-weight:bold; text-decoration:none; }
+.navMain li.linkOn a:hover { color:#000; font-weight:bold; text-decoration:none; }
+.navMain #firstLink.linkOn { margin-left:0px; }
+
+/* searchBox */
+#searchBox { width:950px; height:40px; padding-left:430px; }
+#searchBox #adTop { float:left; width:135px; height:72px; }
+#searchBox #search { float:left; padding:0 0 0 10px; }
+#searchBox #search #searchForm { height:30px; }
+#searchBox #search #searchForm ul { float:left; }
+#searchBox #search #searchForm li { float:left; width:83px; height:30px; margin-right:0px; padding-top:7px; padding-left:6px; background:url(../images/indexsearchItemBg.gif) no-repeat left top; display:inline; }
+#searchBox #search #searchForm li.saleBg { float:left; width:93px; height:30px; margin-right:8px; padding-top:7px; padding-left:6px; background:url(../images/searchItemBg.gif) no-repeat 0 -30px; display:inline; }
+#searchBox #search #searchForm li.rentBg { float:left; width:107px; height:30px; margin-right:8px; padding-top:7px; padding-left:6px; background:url(../images/searchItemBg.gif) no-repeat 0 -60px; display:inline; }
+#searchBox #search #searchForm li span { position:absolute; margin:0; }
+#searchBox #search #searchForm li span select {  margin:-1px; }
+#searchBox #search #searchForm #keyWordLeftBg { float:left; width:3px; height:30px; background:url(../images/searchKeyWordBg.gif) repeat-x left top; }
+#searchBox #search #searchForm #keyWordBg { float:left; height:24px; padding-top:6px; background:url(../images/searchKeyWordBg.gif) repeat-x left bottom; }
+#searchBox #search #searchForm #keyWordRightBg { float:left; width:3px; height:30px; background:url(../images/searchKeyWordBg.gif) repeat-x right top; }
+#searchBox #search #searchForm #keyWordBg input { font-size:14px; color:#999; padding:1px 5px; }
+#searchBox #search #searchForm #searchBtn { float:left; }
+#searchBox #search #searchForm #searchBtn input { width:72px; height:30px; margin-left:8px; font-size:14px; color:#000; font-weight:bold; letter-spacing:1px; background:url(../images/searchBtn.gif) no-repeat; }
+/* searchHelp */
+#searchBox #search #searchForm #searchHelp { float:left; margin-left:8px; }
+#searchBox #search #searchForm #searchHelp p { margin-bottom:2px; }
+/* searchHot */
+#searchBox #search #searchHot { clear:left; float:left; margin-top:10px; }
+#searchBox #search #searchHot ul li { float:left; margin-right:5px; }
+#searchBox #search #searchHot .searchHotTitle { font-weight:bold; }
+/* commonHeader End */
+
+/* main */
+#main { float:left; width:730px; margin-top:10px; }
+
+/* commonFooter */
+.footer { float:left; *float:none; width:100%; height:60px; line-height:21px; text-align:center; border-top:1px solid #bababa; padding:15px 0 20px; margin:30px auto 0; }
+
+/* commonStyle for sale,rent,community,newHouse */
+#box { float:none; width:950px; margin:0 auto; position:relative; }
+.box { float:none; width:950px; margin:0 auto; position:relative; }
+
+/* filter */
+.filter { float:left; width:928px; padding:10px; margin-top:5px; border:1px solid #bababa; }
+.filter ul { clear:both; float:left; width:100%; margin-bottom:7px; }
+.filter ul li { float:left; height:11px; text-align:center; padding:3px; margin-right:8px; display:inline; }
+.filter ul li.filterTarget { color:#f60; font-weight:bold; margin-right:0px; }
+.filter ul li.linkOn { background:#f60; }
+.filter ul li.linkOn a { color:#fff; text-decoration:none; }
+
+/* listCtrl */
+#main .listCtrl { float:left; width:100%; height:30px; }
+.listCtrl .dataNumShow { float:left; padding-top:4px; margin-left:8px; display:inline; }
+.listCtrl .numPerPage { float:left; margin-left:30px; }
+.numPerPage span { float:left; padding-top:4px; }
+.numPerPage ul { float:left; width:72px; }
+.numPerPage ul li { float:left; width:18px; height:15px; padding-top:3px; padding-left:1px; text-align:center;  margin-right:5px; background:url(../images/numPerpageBg.gif) left bottom; }
+.numPerPage ul li.linkOn { background-position:left top; }
+.numPerPage ul li a:hover { text-decoration:none; }
+.numPerPage ul li.linkOn a { color:#f60; cursor:text; }
+.listCtrl .order { float:left; margin-left:30px; }
+.order span { float:left; padding-top:4px; }
+.order span select { float:left; margin-top:-4px; border:1px solid #bababa; }
+.listCtrl .pageSplitSmall { float:left; margin-left:50px; }
+.pageSplitSmall li { float:left; margin-right:8px; padding-top:4px; }
+.pageSplitSmall li.unClickable { width:46px; height:15px; padding-top:4px; text-align:center; border:1px solid #ccc; }
+.pageSplitSmall li.unClickable a { color:#ccc; cursor:text; text-decoration:none; }
+.pageSplitSmall li.clickable { width:46px; height:15px; padding-top:4px; text-align:center; border:1px solid #ccc; }
+.pageSplitSmall li.clickable a { color:#f60; }
+
+/* dataListBox */
+#main .dataListBox { float:left; width:730px; }
+.dataListBox table.tHead { float:left; width:100%; height:26px; border:1px solid #fc6; background:#ffd; }
+.dataListBox table.tHead td { color:#000; padding-top:3px; text-align:center; }
+.dataListBox table.tBody { float:left; width:100%; }
+.dataListBox table.tBody tr { background:url(../images/dotBg.gif) repeat-x left bottom; }
+.dataListBox table.tBody tr.mouseOver { background:#f3f3f3; }
+.dataListBox table.tBody td { height:80px; color:#000; text-align:center; }
+.dataListBox table.tBody td .thumbnail { display:block; width:80px; height:60px; padding:1px; border:1px solid #bababa; }
+.dataListBox table.tBody td.tdAlignLeft { text-align:left; padding-left:5px; }
+.dataListBox table.tBody td a { text-decoration:underline; }
+.dataListBox table.tBody td p { padding-top:3px; padding-bottom:2px; }
+
+/* pageMore */
+.pageMore { float:left; *float:none; width:100%; margin-top:10px; }
+.pageMore ul { float:right; margin-right:10px; *margin-right:5px; }
+.pageMore ul li { float:left; font-family:verdana,arial,"宋体"; color:#999; border:1px solid #ccc;  margin-left:5px; }
+.pageMore ul li span { float:left; text-align:center; height:15px; padding:2px 6px; }
+.pageMore ul li a { float:left; color:#666;}
+.pageMore ul li a span { float:left; cursor:pointer; height:15px; text-align:center; padding:2px 5px;}
+.pageMore ul li.linkOn a { color:#f90; text-decoration:none; }
+.pageMore ul li a:hover { background:#f90; color:#fff; text-decoration:none; }
+
+/* rightBox */
+#box #rightBox { float:left; width:205px; margin-left:15px; }
+#rightBox .ad205_64 { margin-top:10px; }
+#rightBox .recRight { width:100%; margin-top:10px; }
+.recRight .recTitleBox { width:100%; height:20px; padding-top:5px; background:url(../images/rightHouseRecTitleBg.gif) no-repeat; }
+.recRight .recTitleBox span.recTitle { float:left; margin-left:10px; color:#333; font-size:14px; font-weight:bold; }
+.recRight .recTitleBox span.more { float:right; margin-right:5px; margin-top:2px; display:inline; }
+.recRight .recTitleBox span.more a { color:#333; }
+.recRight .recListBox { width:203px; border-left:1px solid #fc6; border-bottom:1px solid #fc6;border-right:1px solid #fc6; }
+.recListBox ul.houseRecList { width:191px; margin:2px 4px; padding:3px 0 5px 4px; background:url(../images/dotBg.gif) repeat-x left bottom; }
+.recListBox ul.mouseOver { background:#f6f6f6; }
+.recListBox ul.houseRecList li { padding-top:4px; }
+.recListBox ul.newsRecList { padding:10px 8px 1px;  }
+.recListBox .newsRecList li { margin-bottom:9px; }
+/* commonStyle for sale,rent,community,newHouse End */
+
+.must { color:#c9620f; font-family:verdana, "宋体", sans-serif; padding-right:5px; }
+
+/* cutimg */
+.cutimg_button{width:72px; height:30px; margin-left:8px; font-size:14px; color:#000; font-weight:bold; letter-spacing:1px; background:url(../images/searchBtn.gif) no-repeat; }
+

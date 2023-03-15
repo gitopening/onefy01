@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * DbException 数组库异常类
+ * @package Util
+ */
+class DbException extends Exception {
+	/**#@+
+	 * WEIP 数据库连接及查询错误类型
+	 */
+	const DB_ERROR								= 0 ;
+	const DB_OPEN_FAILED						= 1 ;
+	const DB_UNCONNECTED						= 1 ;
+	const DB_QUERY_ERROR						= 10 ;
+	const DB_RECORD_IS_EXISTED					= 11 ;
+	/**#@-*/
+
+	/**
+	 * 异常类型
+	 * @var int $type
+	 */
+	public $type = self::DB_ERROR;
+
+	/**
+	 * 构造函数
+	 * @param string $msg 异常信息
+	 * @param string $type 异常类型
+	 */
+    function __construct($msg, $type = self::DB_ERROR) {
+        parent::__construct($msg,$type);
+		$this->type = $type;
+    }
+}
+?>

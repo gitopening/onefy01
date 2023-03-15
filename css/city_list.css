@@ -1,0 +1,238 @@
+#city {
+    padding: 25px 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+#city .all-city dl dd a:hover {
+    text-decoration: underline;
+    color: #3366bb;
+}
+.filter-type{
+    clear:both;
+    width:	244px;
+    height: 33px;
+    margin: 12px 0;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    overflow: hidden;
+    color: #333;
+    background-color: #f8f8f8;
+    background-image: -moz-linear-gradient(top,#fefefe,#f0f0f0);
+    background-image: -ms-linear-gradient(top,#fefefe,#f0f0f0);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#fefefe),to(#f0f0f0));
+    background-image: -webkit-linear-gradient(top,#fefefe,#f0f0f0);
+    background-image: -o-linear-gradient(top,#fefefe,#f0f0f0);
+    background-image: linear-gradient(top,#fefefe,#f0f0f0);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe',endColorstr='#f0f0f0',GradientType=0);
+}
+.filter-type ul{
+    height:33px;
+    width:300px;
+    overflow:hidden;
+}
+.filter-type li{
+    float:left;
+    border-left: 1px solid #CCC;
+    list-style:none;
+}
+.filter-type li a{
+    height:33px;
+    line-height:33px;
+    padding:0 15px;
+    display:block;
+    text-decoration:none;
+    color: #333;
+    font-weight: bolder;
+    font-size:12px;
+    text-align:center;
+    outline:none;
+}
+.filter-type li.noleftborder{
+    border-left:none;
+}
+.filter-type .current{
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0 2px 5px -1px #999;
+    -moz-box-shadow: inset 0 2px 5px -1px #999;
+    box-shadow: inset 0 2px 5px -1px #999;
+}
+.filter-type li a:hover{
+    color: #333;
+    -webkit-box-shadow: inset 0 2px 5px -1px #999;
+    -moz-box-shadow: inset 0 2px 5px -1px #999;
+    box-shadow: inset 0 2px 5px -1px #999;
+    filter: none;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    background: #fdfdfd;
+}
+#city .s-main .cityin.all-city a:hover {
+    color: #3366bb;
+    text-decoration: underline;
+}
+#city .cityin {
+    font-size: 12px;
+    height: 20px;
+}
+#city .all-city {
+    /*text-align: left;*/
+    line-height: 2em;
+}
+#city .chose, .choseb {
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 25px;
+	color:#333;
+	height: 42px;
+}
+#city .cityin a {
+    display: block;
+    float: left;
+    font-size: 15px;
+    margin-right: 17px;
+    font-weight: bold;
+    color: #333;
+}
+#city .in-icon {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    height: 16px;
+    margin: 3px 24px 0 -9px;
+    width: 8px;
+}
+#city .all-city h2 {
+    font-size: 14px;
+    font-weight: bold;
+}
+#city .all-city dl {
+    display: block;
+    line-height: 30px;
+    overflow: hidden;
+    clear:both;
+    margin:0;
+    padding:5px 0;
+    position:relative;
+}
+#city .all-city dt {
+    color: #333;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+    width:24px;
+    height:30px;
+    margin:0;
+    position:relative;
+    *+top:0 !important;
+    top:0;
+    _top:-2px;
+}
+#city .all-city #area-list dt{
+    width:80px;
+}
+#city .all-city #area-list dd{
+    /*width:920px;*/
+}
+#city .first-letter{
+    float: left;
+    width: 25px;
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+	font-size:17px;
+}
+#city .all-city dd {
+    overflow: hidden;
+    padding-left: 5px;
+    line-height: 30px;
+    margin: 0;
+    /*margin-left: 54px;*/
+}
+#city .all-city dd a {
+    display: inline-block;
+    margin-right: 14px;
+    white-space: nowrap;
+    font-size:15px;
+    line-height:30px;
+    color: #333;
+}
+#city .in-icon, .icon-up, .icon-down {
+    background: url("/images/city-arrow.png") repeat scroll 0 0;
+    margin-top:6px;
+}
+.search-city{
+    /*float: left;*/
+    clear: both;
+    width: 240px;
+    height: 24px;
+    line-height: 24px;
+    margin: 15px 0 16px;
+    font-size: 15px;
+}
+.search-city .caption{
+    float: left;
+    font-weight: bold;
+}
+.search-city .control{
+    float: left;
+    padding-left: 25px;
+}
+.search-city .control input{
+    width: 120px;
+    padding: 2px 8px;
+    outline: none;
+}
+.s-main{
+    padding: 15px 0;
+    clear: both;
+}
+.current-city {
+    text-align: center;
+    margin: 50px auto 10px;
+	font-size: 22px;
+    /*color: #FFF;
+    display: block;*/
+	font-weight:bold;
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+}
+.current-city a{
+    text-decoration: none;
+    color: #333;
+    /*width: 210px;
+    background: url(../images/bgenter.gif) no-repeat scroll 0 0;*/
+}
+.current-city a:hover{
+	text-decoration:underline;
+    color: #3366bb;
+    /*background: url(../images/bgenter.gif) no-repeat scroll 0 -42px;*/
+}
+.ac_results{
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-top: none;
+    width: 138px;
+}
+.ac_results li{
+    cursor: pointer;
+}
+.ac_results li.ac_over{
+    background-color: #336699;
+    color: #FFF;
+}
+.ac_results .no-city{
+    background-color: #FFF;
+    color: red;
+}
+#top-ad{
+	text-align:center;
+	margin:15px auto;
+}

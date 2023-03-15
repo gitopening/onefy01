@@ -1,0 +1,279 @@
+#list-search{
+    margin: 0 15px 20px;
+}
+#list-search a{
+    display: block;
+    text-decoration: none;
+}
+#list-search .control-wrap{
+    border: 1px solid #CCC;
+    height: 33px;
+    overflow: hidden;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#list-search .control-wrap .ub-f1 {
+    padding: 0 10px 0 35px;
+}
+#list-search .control-wrap input{
+    border: none;
+    outline: none;
+    height: 33px;
+    line-height: 33px;
+    overflow: hidden;
+    font-size: 16px;
+    width: 100%;
+}
+#list-search .icon-search{
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    font-size: 18px;
+    color: #666;
+    font-weight: bold;
+}
+#list-search-btn{
+    margin: 2px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    height: 29px;
+    line-height: 29px;
+    font-size: 14px;
+    padding: 0;
+    width: 100px;
+    background-color: #003663;
+    color: #FFFFFF;
+    text-align: center;
+}
+#list-search .filter{
+    display: none;
+}
+.m-type {
+    margin-top: 15px;
+    font-size: 14px;
+}
+.m-type .item{
+    text-align: center;
+    height: 33px;
+    line-height: 33px;
+    border: 1px solid #CCC;
+    border-right: none;
+}
+.m-type .item:last-child{
+    border-right: 1px solid #CCC;
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+}
+.m-type .item:first-child{
+    -webkit-border-radius: 5px 0 0 3px;
+    -moz-border-radius: 5px 0 0 3px;
+    border-radius: 5px 0 0 3px;
+}
+.m-type .active{
+    background-color: #003663;
+    color: #FFF;
+    border-color: #003663;
+}
+#filter-btn{
+    margin-left: 10px;
+    background-color: #FFF;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 15px;
+    font-size: 18px;
+    color: #333;
+}
+#filter-btn i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+#list-search .active{
+    background-color: #003663;
+    color: #FFF;
+    border-color: #003663;
+}
+.m-type a {
+    background-color: #FFF;
+    color: #333;
+}
+.m-type .active a{
+    background-color: #003663;
+    color: #FFF;
+    border-color: #003663;
+}
+.filter .item{
+    margin: 20px 0;
+    font-size: 18px;
+}
+.filter .item select{
+    font-size: 18px;
+    color: #333;
+}
+.filter .cityarea2-wrap{
+    margin-left: 15px;
+}
+/*分页样式*/
+/*总容器样式*/
+.pager { padding: 3px 0 10px; text-align: center; color:#003663;font-size:12px; font-family:Tahoma;}
+/*分页链接样式*/
+.pager a { margin: 2px; padding:2px 8px; text-decoration: none; border:1px solid #003663;color:#003663; }
+/*分页链接鼠标移过的样式*/
+.pager a:hover { background-color:#003663; color:#FFF; }
+/*当前页码的样式
+.pager li.thisclass { font-weight: bold; margin: 0 2px; padding: 2px 5px; color: #fff; background-color: #06C; border: 1px solid #06C;text-align:center; }  */
+/*不可用分页链接的样式(比如第1页时的“上一页”链接)*/
+.pager li.disabled { margin: 0 2px; padding: 2px 5px; color: #CCC; border: 1px solid #DDD; }
+/*跳转下拉菜单的样式*/
+.pager select {margin: 0 2px -2px 2px; color:#66C;font-size:12px; font-family:Tahoma;}
+.pager li {
+    display:inline;
+}
+.pager li.thisclass{
+    font-weight: bold;
+}
+.pager li.thisclass a{
+    background-color:#003663; color:#FFF;
+}
+/*列表筛选项*/
+.filter-option{
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    height: 34px;
+    line-height: 34px;
+    background-color: #FFF;
+    border-bottom: 1px solid #CCC;
+    display: -webkit-box !important;
+    display: box !important;
+    -webkit-box-align: center;
+    box-align: center;
+    z-index: 100;
+}
+.filter-option .item-title{
+    color: #333;
+    padding: 0 3px;
+    height: 35px;
+    overflow: hidden;
+    display: -webkit-box !important;
+    display: box !important;
+    -webkit-box-align: center;
+    box-align: center;
+}
+.filter-option .item:first-child .item-title{
+    padding-left: 15px;
+}
+.filter-option .item:last-child .item-title{
+    padding-right: 12px;
+}
+.filter-option .item-title .text{
+    position:relative;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+}
+.filter-option .active .item-title {
+    color: #003663;
+}
+.filter-option .active .item-list{
+    display: block;
+}
+.filter-option .item-title .iconfont{
+    position: relative;
+    top: -1px;
+    font-size: 14px;
+}
+.filter-option .item{
+    position:relative;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    width: 25%;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.column_1 .item{
+    width: 100%;
+}
+.column_2 .item{
+    width: 50%;
+}
+.column_3 .item{
+    width: 33.333%;
+}
+.column_4 .item{
+    width: 25%;
+}
+.column_5 .item{
+    width: 20%;
+}
+.filter-option .active{
+    background-color: transparent;
+}
+.filter-option .active a{
+    /*color: red;*/
+}
+.filter-option .item-list{
+    background-color: #FFF;
+    position: fixed;
+    top: 85px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+    z-index: 100;
+}
+.filter-option .item-list a{
+    display: block;
+    padding: 0 15px;
+    color: #333;
+}
+.filter-option .option{
+
+}
+.filter-option .sub-item-title{
+    padding: 0 15px;
+}
+.filter-option .sub-item-list{
+    position: fixed;
+    top: 85px;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    border-left: 1px solid #CCC;
+    display: none;
+    background-color: #FFF;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.filter-option .sub-active .sub-item-list{
+    display: block;
+}
+.filter-option .sub-active .sub-item-title, .filter-option .sub-item-list .sub-active a{
+    background-color: #EFEFEF;
+    color: #003663;
+}
+.filter-option .sub-active .sub-item-title{
+    margin-right: 50%;
+}
+#filter-header-ad-list {
+    margin-top: 85px;
+    clear: both;
+}
+#news-list .info {
+    font-size:16px;
+}

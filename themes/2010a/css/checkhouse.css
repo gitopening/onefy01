@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+#img_list dl{
+	width:180px;
+	margin:10px;
+	float:left;
+	display:inline;
+	overflow:hidden;
+	text-align:center;
+}
+#img_list dl dd{
+	height:26px;
+	line-height:26px;
+	overflow:hidden;
+}
+#img_list dl img{
+	width:90%;
+}
+.clear{
+	clear:both;
+}
+.operation_box{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	padding:10px;
+	border-bottom:1px solid #99d3fb;
+	background:#FFF;
+	z-index:100;
+}
+#house_info_box{
+	clear:both;
+}
+.bottom_padding{
+	height:43px;
+}
+.table_form {
+	clear:both;
+}
+.tips{
+	font-size: 22px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif, "微软雅黑";
+	padding: 35px 0;
+	text-align: left;
+	padding-left: 40px;
+	width: 350px;
+	margin: 0 auto;
+}
+.loading{
+	background:url(/images/loading.gif) no-repeat left center;
+}
+#showmessage{
+	top:53px;
+}

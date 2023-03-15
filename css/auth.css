@@ -1,0 +1,180 @@
+body, ul, li, dl, dt, dd, header, footer, aside{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body{
+    font-size: 14px;
+    font-family: "Oxygen", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.clear-fix:after, .main:after {
+    clear: both;
+}
+.clear-fix:after, .clear-fix:before, .main:after, .main:before {
+    content: " ";
+    display: table;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:hover, a:visited{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: underline;
+}
+.header-box {
+    clear: both;
+    /*background-color: #ff5735;*/
+    background-color: #003663;
+    color: #fff;
+    font-size: 18px;
+}
+.header-box .site-name a {
+    color: #fff;
+}
+.main {
+    max-width: 400px;
+    min-width: 280px;
+    margin: 0 auto;
+    padding: 8px 15px;
+}
+.wrap {
+    max-width: 560px;
+    min-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section-box {
+    clear: both;
+}
+.section-box .message {
+    color: red;
+    font-size: 24px;
+    line-height: 1.75em;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 8px 15px;
+}
+.section-box .tips {
+    font-size: 16px;
+}
+.form-box {
+    clear: both;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.form-box .item {
+    margin-bottom: 15px;
+}
+.form-box #verify_code {
+    padding: 8px 12px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 24px;
+    border: 1px solid #CCC;
+    outline: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 174px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #333;
+}
+.form-box #verify-image {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+.form-box .btn {
+    background-color: #003663;
+    color: #fff;
+    height: 42px;
+    line-height: 42px;
+    padding: 0;
+    width: 120px;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.form-box .btn:hover {
+    background-color: #004d89;
+}
+.form-box #refresh-btn {
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative;
+    top: -19px;
+    color: #003663;
+}
+.form-box #refresh-btn:hover {
+    text-decoration: underline;
+}
+/*获取二维码按钮样式*/
+.get-qrcode-btn {
+    background-color: #003663;
+    color: #fff;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 30px;
+    width: 140px;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid #CCC;
+    outline: none;
+    margin: 0 auto 35px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.wechat-box{
+    display: none;
+}
+.wechat-box .wechat-qrcode-box {
+    width: 358px;
+    position: relative;
+    clear: both;
+    text-align: center;
+    margin: 0 auto;
+}
+.wechat-box .wechat-qrcode-box .qrcode-container {
+    height: 356px;
+    border: 1px solid #ccc;
+}
+.wechat-box .wechat-qrcode-box .qrcode-container .message {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    height: 340px;
+    line-height: 392px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background: url(../images/loading-2.gif) no-repeat scroll center 145px;
+    display: none;
+    margin-top: 0;
+}
+.wechat-box .wechat-qrcode-box .qrcode-container .error{
+    background: url(../images/icon/icon-refresh.png) no-repeat scroll center 145px;
+    display: block;
+}
+.wechat-box .wechat-qrcode-box img {
+    width: 100%;
+}
+.wechat-box .scan-tips {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+}
+.wechat-box-pop .scan-tips {
+    padding-bottom: 15px;
+}

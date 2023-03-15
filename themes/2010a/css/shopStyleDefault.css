@@ -1,0 +1,61 @@
+﻿body { background:#fff; }
+
+a { color:#c60; }
+a:hover { color:#666; }
+
+.topInfoMain .shopName { color:#c60; }
+.topInfoMain .link { background:#ffd; }
+
+.comMainBox { background-color:#fff; }
+.comMainBox .boxBg { border-color:#fee2a7; }
+.comMainBox .boxHead { font-size:14px; color:#333; background-color:#ffd; border-bottom:1px solid #fee2a7; }
+.comMainBox .boxHead .titleMore .titleMoreLink { color:#916307; font-size:12px; }
+
+span.addFriend { display:block; position:absolute; left:180px; top:200px; padding:2px 5px; padding-top:3px; border:1px solid #fc6; background:#ffd; cursor:pointer; }
+span.addFriend a:hover { color:#666; text-decoration:none; }
+
+.headMain .title { height:28px; font-family:"黑体", "宋体", sans-serif; color:#000; font-size:24px; font-weight:bold; position:absolute; top:45px; left:25px; padding-top:2px; background:url(../images/shop/styleDefault/shopTitleBg.png) repeat-x left top; _background:url(../images/shop/styleDefault/shopTitleBg.gif) repeat-x left top; border:1px solid #eee; }
+.headMain .link { position:absolute; top:80px; left:25px; color:#fff; font-family:verdana, "宋体", sans-serif; }
+.headMain .link a { color:#fff; }
+
+.headMain { background-image:url(../images/shop/styleDefault/headPic_bg.jpg); }
+.headMain .headNav li a { background:url(../images/shop/styleDefault/headNavBg.gif) repeat-x left top;; }
+.headMain .headNav li a span { background:url(../images/shop/styleDefault/headNavBg.gif) repeat-x right top;; }
+
+.houseList1 ul li { border:1px solid #eee; }
+.houseList1 ul li span.box { background-color:#fff; }
+.houseList1 ul li span.boxOn { background-color:#f9f9f9; }
+
+.houseType .houseTypeTab { border-color:#E9D3A3; }
+.houseType .houseTypeTab li a { color:#916307; }
+.houseType .houseTypeTab li a:hover, .houseType .houseTypeTab li.linkOn a { border-color:#E9D3A3; background-color:#FDF1D7; }
+
+.levelBox .levelTable td { border-color:#FBE6B7; }
+.levelBox .levelTable td.at { background-color:#FAF7F0; }
+.levelBox .levelTable thead td { background-color:#FAF7F0; }
+
+.profileBox .title { color:#c60; }
+
+
+/* pageMore */
+.pageMore { float:left; *float:none; width:100%; margin-top:10px; }
+.pageMore ul { float:right; margin-right:10px; *margin-right:5px; }
+.pageMore ul li { float:left; font-family:verdana,arial,"宋体"; color:#999; border:1px solid #ccc;  margin-left:5px; }
+.pageMore ul li span { float:left; text-align:center; height:15px; padding:2px 6px; }
+.pageMore ul li a { float:left; color:#666;}
+.pageMore ul li a span { float:left; cursor:pointer; height:15px; text-align:center; padding:2px 5px;}
+.pageMore ul li.linkOn a { color:#f90; text-decoration:none; }
+.pageMore ul li a:hover { background:#f90; color:#fff; text-decoration:none; }
+
+
+/* dataListBox */
+.dataListBox table.tHead { float:left; width:100%; height:26px; border:1px solid #fee2a7; background:#ffd; }
+.dataListBox table.tHead td { color:#000; padding-top:3px; text-align:center; }
+.dataListBox table.tBody { float:left; width:100%; }
+.dataListBox table.tBody tr { background:url(../images/dotBg.gif) repeat-x left bottom; }
+.dataListBox table.tBody tr.mouseOver { background:#f8f8f8; }
+.dataListBox table.tBody td { height:80px; color:#000; text-align:center; }
+.dataListBox table.tBody td .thumbnail { display:block; width:80px; height:60px; padding:1px; border:1px solid #e3e3e3; }
+.dataListBox table.tBody td.tdAlignLeft { text-align:left; padding-left:5px; }
+.dataListBox table.tBody td a { text-decoration:underline; }
+.dataListBox table.tBody td p { padding-top:3px; padding-bottom:2px; }

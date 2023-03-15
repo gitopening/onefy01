@@ -1,0 +1,101 @@
+#home-search{
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+#home-search .input-box{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #AAA;
+    background-color: #FFF;
+    height: 42px;
+    margin-top: 15px;
+    display: -webkit-box !important;
+    display: box !important;
+    position:relative;
+}
+#home-search .input-box input{
+    border: none;
+    margin: 0 0 0 10px;
+    outline: none;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 0 0 25px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+#home-search .control-wrap{
+    position: relative;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    margin-right: 10px;
+    overflow: hidden;
+}
+#home-search .icon-search{
+    position: absolute;
+    left: 10px;
+    top: 9px;
+    font-size: 18px;
+    z-index: 1;
+    color: #666;
+    font-weight: bold;
+}
+#search-type-list{
+    display: none;
+    background: #FFF;
+    position: absolute;
+    z-index: 3;
+    left: -1px;
+    right: -1px;
+    border: 1px solid #999;
+    top: 40px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    border-top: 1px solid #EFEFEF;
+}
+#search-type-list .item{
+    padding: 8px 10px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #EFEFEF;
+}
+#home-search-btn{
+    margin: 2px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 18px;
+    padding: 0 32px;
+    background-color: #003663;
+    color: #FFFFFF;
+    text-align: center;
+}
+#search-type{
+    position: relative;
+    height: 42px;
+    border: 1px solid #AAA;
+    background-color: #FFF;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#search-type-name{
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    color: #333;
+    margin: 0 5px 0 10px;
+    position: relative;
+}
+#search-type-name i{
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 1px;
+    font-size: 24px;
+}

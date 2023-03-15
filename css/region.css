@@ -1,0 +1,70 @@
+#login{
+	float:left;
+	width:222px;
+	height:261px;
+	display:inline;
+	margin:15px;
+	overflow:hidden;
+	background:url(../images/register1.jpg) no-repeat center top;
+}
+#reg{
+	float:left;
+	width:342px;
+	height:614px;
+	overflow:hidden;
+	margin:15px;
+	display:inline;
+	background:url(../images/register.jpg) no-repeat center top;
+}
+#login dt,#reg dt{
+	height:25px;
+	line-height:25px;
+	clear:both;
+
+}
+#login dt,#reg dt{
+	font-weight:bold;
+}
+#login dl,#reg dl{
+	padding:0 15px;
+}
+#login dd,#reg dd{
+	margin-bottom:8px;
+	clear:both;
+	position: relative;
+}
+#login .coltitle,#reg .coltitle{
+	font-size:16px;
+	font-weight:bold;
+	padding:0 15px;
+	font-family:"Î¢ÈíÑÅºÚ";
+	margin:15px auto 10px;
+}
+#remberme,#agree{
+	position:relative;
+	top:2px;
+}
+#valid_pic{
+	position:relative;
+	top:-2px;
+	_top:0px;
+	height:20px;
+	cursor:pointer;
+}
+#reg .input_region{
+	width:309px;
+	line-height:18px;
+	height:18px;
+}
+#login .input_region{
+	width:192px;
+	line-height:18px;
+	height:18px;
+}
+#vaild{
+	height:18px;
+	line-height:18px;
+}
+#remberme{
+	_margin-left:-4px;
+}

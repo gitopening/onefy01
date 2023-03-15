@@ -1,0 +1,164 @@
+﻿*{ margin:0; padding:0; }
+body { color:#666; font-size:12px; font-family:"宋体", sans-serif; }
+img { border:none; }
+div { overflow:hidden; }
+a { color:#36c; text-decoration:none; }
+a:hover { text-decoration:underline; }
+ul, li { list-style:none; }
+
+.aUnderline { text-decoration:underline; }
+.weightBold { font-weight:bold; }
+.weightNormal { font-weight:normal; }
+.familyAlpha { font-family:verdana, "宋体", sans-serif; }
+.familyArial { font-family:arial; }
+.color333 { color:#333; }
+.color666 { color:#666; }
+.color999 { color:#999; }
+.colorF90 { color:#f90; }
+.colorF60 { color:#f60; }
+.size12px { font-size:12px; }
+.size14px { font-size:14px; }
+.size16px { font-size:16px; }
+
+.cb { clear:both; float:none; width:100%; height:0; }
+.fb { font-weight:bold; }
+.cHui { color:#ccc; }
+.cHui2 { color:#999; }
+.cYel { color:#ffae00; }
+.overPic { color:#666; background:#fff; float:none; border:1px solid #666; padding:3px; margin-top:8px; *margin-top:-16px; _margin-top:8px; }
+.overPic img { width:200px; height:150px; }
+.inps { font-size:12px; padding:3px 2px 2px; border:1px solid #c9c9c9; }
+.fL { float:left; }
+.fR { float:right; }
+
+.nextPages { width:100%; text-align:right; }
+.nextPages td { font-size:12px; font-family:'arial', '宋体'; }
+.nextPages a { color:#000; font-size:12px; text-decoration:none; }
+.nextPages a:hover { text-decoration:underline; }
+.nextPages table .nextPagesInfo {color:#666; line-height:25px; font-family:'arial', '宋体'; }
+.nextPages table .nextPagesTd { text-align:right; }
+.nextPages table .nextPagesTd a, .nextPages table .nextPagesTd font { height:15px; line-height:19px; font-size:12px; float:left; padding:1px 4px; margin-right:2px; display:block; border:1px solid #ccc; }
+.nextPages table .nextPagesTd font { font-weight:bold; border-color:#fff; color:#f00; }
+.nextPages table .nextPagesTd .nextPagesInfo font { font-weight:normal; border-color:#ccc; color:#666; }
+.nextPages table .nextPagesTd a:hover { color:#ffae00; }
+.nextPages table .nextPagesTd a.linkOn { color:#ffae00; font-weight:bold; text-decoration:none; border-color:#fff; background:#fff; }
+.nextPages table .nextPagesTd .nextPagesInps { width:20px; margin:0 5px; border:1px solid #ccc; padding:2px; margin-bottom:2px; }
+.nextPages table .nextPagesTd .nextPagesBtns { margin-bottom:2px; }
+
+.comMainBox { margin-top:8px; padding:2px; background:#E1E8F7; }
+.comMainBox .boxBg { border:1px solid #B4CBFF; background:#fff; }
+.comMainBox .boxHead { font-weight:bold; text-indent:10px; line-height:25px; }
+.comMainBox .boxHead .titleMore { width:100%; height:25px; position:relative; }
+.comMainBox .boxHead .titleMore .titleMoreLink { font-weight:normal; position:absolute; top:1px; right:10px; }
+
+.topInfo { height:40px;}
+.topInfoMain { width:958px; margin:0 auto; }
+.topInfoMain .logo { float:left; width:170px; height:28px; padding:0 10px 1px 0; border-right:1px solid #eee; margin-top:5px; }
+.topInfoMain .shopName { float:left; font-family:"黑体", "宋体", sans-serif; font-size:20px; font-weight:normal; padding:12px 0 0 10px; }
+.topInfoMain .link { float:right; padding:5px 0 3px 0; }
+.topInfoMain .link ul li { float:left; margin:0 8px; display:inline; }
+.topInfoMain .link a { color:#000; }
+
+.head { height:140px; }
+.headMain { width:958px; height:140px; margin:0 auto; position:relative; }
+
+.headMain .manage { position:absolute; top:12px; right:0; }
+.headMain .headNav { position:absolute; top:115px; right:10px; }
+.headMain .headNav li { float:left; width:80px; height:25px; margin-left:5px; display:inline; }
+.headMain .headNav li a { height:25px; color:#000; text-align:center; display:block; padding-left:4px; }
+.headMain .headNav li a span { display:block; height:25px; font-size:14px; cursor:pointer; line-height:27px; padding-right:4px; }
+.headMain .headNav li a:hover, .headMain .headNav li.linkOn a { font-weight:bold; text-decoration:none; background-position:left -25px;  }
+.headMain .headNav li a:hover span, .headMain .headNav li.linkOn a span { color:#fff; background-position:right -25px; }
+
+.main { width:962px; margin:0 auto; }
+.mainLeft { width:686px; margin:0 8px 8px 0; float:left; }
+.mainRight { width:268px; margin-bottom:8px; float:left; }
+.mainLeft2 { margin:0 0 8px 0; float:left; }
+.mainRight2 { margin:0 8px 8px 0; float:left; }
+
+.foot { width:960px; margin:22px auto 10px; border-top:1px solid #f0f0f0; }
+.footMain { font-family:verdana, "宋体", sans-serif; padding:28px 0; text-align:center; border-top:1px solid #fff; }
+
+.houseList1 { width:680px; }
+.houseList1 ul { padding:10px 0 0 10px; *padding-bottom:10px; float:left; }
+.houseList1 ul li { width:318px; height:107px; float:left; padding:1px; margin:0 10px 10px 0; overflow:hidden; position:relative; }
+.houseList1 ul li span.box { height:105px; color:#666; border:1px solid #fff; display:block; }
+.houseList1 ul li span.box .pic { width:112px; height:84px; float:left; margin:11px 8px 0 8px; padding:1px; border:1px solid #e3e3e3; background:#fff; }
+.houseList1 ul li span.box span.txt { float:left; line-height:18px; margin-top:8px; }
+.houseList1 ul li .houseTypeSale { display:block; position:absolute; left:5px; top:5px; width:36px; height:35px; background:url(../images/shop/houseTypeIcon.gif) no-repeat left top; }
+.houseList1 ul li .houseTypeRent { display:block; position:absolute; left:5px; top:5px; width:36px; height:35px; background:url(../images/shop/houseTypeIcon.gif) no-repeat left bottom; }
+
+
+.houseList2 { width:680px; }
+.houseList2 ul { padding:15px 0 0 15px; *padding-bottom:15px; _padding-bottom:15px; float:left; }
+.houseList2 ul li { width:320px; height:68px; float:left; margin:0 10px 10px 0; padding-bottom:2px; _display:inline; overflow:hidden; background:url(../images/dotBg.gif) repeat-x bottom; }
+.houseList2 ul li p { padding:3px 0; }
+.houseList2 ul li p.title .pic { margin-bottom:-3px; }
+.houseList2 ul li p.houseInfoText span.price { color:#f90; }
+
+.houseList3 { width:100%; }
+.houseList3 .ulList1 { padding:10px; }
+.houseList3 .ulList1 li { width:100%; height:55px; color:#666; line-height:21px; padding:8px 0; overflow:hidden; background:url(../../images/shop/px3.gif) repeat-x bottom; }
+.houseList3 .ulList1 li.title { height:auto; color:#36c; font-weight:bold; border:1px solid #DEDEDE; padding:0; background:none; }
+.houseList3 .ulList1 li.title .s { height:25px; line-height:25px; padding:0; background:url(../../images/shop/px4.gif) #E0E7F7 repeat-y right top; }
+.houseList3 .ulList1 li.title .s8 { width:53px; background-image:none; }
+.houseList3 .ulList1 li.title .s8 img { margin-top:3px; }
+.houseList3 .ulList1 li.title a { text-decoration:underline; }
+.houseList3 .ulList1 li .s { float:left; text-align:center; } 
+.houseList3 .ulList1 li .s1 { width:80px; }
+.houseList3 .ulList1 li .s1 img { width:68px; height:50px; border:1px solid #ccc; }
+.houseList3 .ulList1 li .s2 { width:172px; text-align:left; text-indent:8px; }
+.houseList3 .ulList1 li .s2 a { text-decoration:underline; }
+.houseList3 .ulList1 li .s2 a:hover { color:#ffae00; }
+.houseList3 .ulList1 li .s3 { width:70px; padding:15px 0; }
+.houseList3 .ulList1 li .s4 { width:60px; padding:15px 0; }
+.houseList3 .ulList1 li .s5 { width:95px; }
+.houseList3 .ulList1 li .s5_1 { width:95px; padding:15px 0; }
+.houseList3 .ulList1 li .s6 { width:50px; padding:15px 0; }
+.houseList3 .ulList1 li .s7 { width:80px; padding:15px 0; }
+.houseList3 .ulList1 li .s8 { width:52px; _width:50px; padding:15px 0; }
+
+.houseSeach { padding:10px; }
+.houseSeach .searchSmt { height:21px; padding:2px; border:1px solid #c9c9c9; background:#f9f9f9; cursor:pointer; }
+
+.houseType { padding:10px; }
+.houseType .houseTypeTab { width:242px; border-bottom:1px solid #9FB7ED; }
+.houseType .houseTypeTab li { width:65px; height:22px; line-height:21px; float:left; margin-right:4px; }
+.houseType .houseTypeTab li a { width:100%; color:#039; text-align:center; border:solid #fff; border-width:1px 1px 0 1px; display:block; padding-bottom:1px; }
+.houseType .houseTypeTab li a:hover, .houseType .houseTypeTab li.linkOn a { border:solid #9FB7ED; border-width:1px 1px 0 1px; text-decoration:none; background:#D5E2FF; }
+.houseType .TypeItemBox { width:239px; padding:6px 0 0 3px; }
+.houseType .TypeItemTitle { padding:2px 0; clear:both; }
+.houseType .TypeItem { width:242px; padding:0 0 2px; margin-bottom:5px; overflow:hidden; }
+.houseType .TypeItem li { float:left; width:105px; line-height:17px; margin-right:15px; }
+.houseType .TypeItem1 li { width:64px; }
+
+.userInfo { border:1px solid #fff; position:relative; }
+.userInfo .pic { float:left; width:240px; height:70px; padding-top:4px; margin-right:8px; background:#fff; }
+.userInfo p { line-height:21px; }
+.userInfo .txtBox1 { position:relative; padding:8px 6px; padding-bottom:4px; }
+.userInfo .txtBox1 p.brokerRank { _padding-top:1px; }
+.userInfo .txtBox1 p.brokerIdentity { _padding-top:2px; }
+.userInfo .txtBox1 p.brokerActivity { _padding-top:5px; _padding-bottom:4px; }
+.userInfo .txtBox2 { padding:0 0 5px 6px; }
+.userInfo .txtBox3 { width:95%; padding:5px 0 5px 0; background:url(../images/dotBg.gif) repeat-x left top; margin:0 auto; }
+
+.userNews { padding:6px 10px; line-height:21px; }
+.userNews .time { color:#ccc; }
+
+.userFriends { width:252px; padding:10px 4px 6px 4px; }
+.userFriends li { width:80px; line-height:21px; text-align:center; float:left; margin-right:4px; }
+.userFriends li img { width:50px; height:50px; padding:1px; border:1px solid #ccc; background:#fff; }
+
+.levelBox .levelTable { width:560px; border-collapse:collapse; margin:15px auto; }
+.levelBox .levelTable td { text-align:center; line-height:15px; border:1px solid #B4CBFF; padding:8px 5px; }
+.levelBox .levelTable td.at { width:140px; font-size:13px; background:#F0F3FB; }
+.levelBox .levelTable td span.good { color:#f60; font-size:13px; font-weight:bold; padding-top:2px; padding-left:20px; background:url(../images/shop/good.gif) no-repeat; }
+.levelBox .levelTable td span.bad { color:#690; font-size:13px; font-weight:bold; padding-top:3px; padding-left:20px; background:url(../images/shop/bad.gif) no-repeat; }
+.levelBox .levelTable2 { width:650px; }
+.levelBox .levelTable thead td { background:#F0F3FB; }
+.levelBox .levelTable tbody td { color:#666; }
+
+.profileBox { padding:15px; }
+.profileBox .title { font-size:14px; font-weight:bold; padding:8px 0 8px 5px; background:url(../images/dotBg.gif) repeat-x bottom; }
+.profileBox .text { padding:12px; line-height:180%;}
+.profileBox .text ul li { line-height:240%;}

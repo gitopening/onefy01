@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule .* - [env=HTTP_AUTHORIZATION:%{HTTP:Authorization},last]

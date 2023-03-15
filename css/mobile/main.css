@@ -1,0 +1,389 @@
+body, ul, li, dl, dt, dd, header, footer, aside{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body{
+    font-size: 14px;
+    /*font-family: "Oxygen", Arial, "Hiragino Sans GB", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;*/
+    font-family: Avenir,Helvetica,Arial,Verdana,Sans-Serif,"宋体","微软雅黑", "黑体";
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    overflow-x: hidden;
+}
+a{
+    color: #003663;
+    text-decoration: none;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix:after, .clearfix:before{
+    content: " ";
+    display: table;
+}
+.ub{
+    display: -webkit-box !important;
+    display: box !important;
+    position:relative;
+}
+.ub-rev{
+    -webkit-box-direction:reverse;
+    box-direction:reverse;
+}
+.ub-fh{
+    width:100%;
+}
+.ub-fv{
+    height:100%;
+}
+.ub-con{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+.ub-ac{
+    -webkit-box-align:center;
+    box-align:center;
+}
+.ub-ae{
+    -webkit-box-align:end;
+    box-align:end;
+}
+.ub-pc{
+    -webkit-box-pack:center;
+    box-pack:center;
+}
+.ub-pe{
+    -webkit-box-pack:end;
+    box-pack:end;
+}
+.ub-pj{
+    -webkit-box-pack:justify;
+    box-pack:justify;
+}
+.ub-ver{
+    -webkit-box-orient:vertical;
+    box-orient:vertical;
+}
+.ub-f1{
+    position:relative;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+}
+.ub-f2{
+    position:relative;
+    -webkit-box-flex: 2;
+    box-flex: 2;
+}
+.ub-f3{
+    position:relative;
+    -webkit-box-flex: 3;
+    box-flex: 3;
+}
+.ub-f4{
+     position:relative;
+     -webkit-box-flex: 4;
+     box-flex: 4;
+ }
+header{
+    background-color: #003663;
+    color: #c2e4fc;
+    padding: 0;
+    height: 49px;
+    line-height: 49px;
+    position: fixed;
+    z-index: 110;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #000;
+}
+header a{
+    color: #FFF;
+    text-decoration: none;
+}
+.current-city, .change-city{
+    float: left;
+    font-size: 14px;
+}
+.site-name{
+    float: left;
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+.current-city{
+    float: left;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+.current-city span, .current-city i{
+    float: left;
+    font-size: 16px;
+    position: relative;
+    top: 1px;
+}
+.current-city i:before{
+    position: relative;
+    top: 1px;
+}
+#nav-menu-btn{
+    float: right;
+    width: 50px;
+    text-align: center;
+}
+.active{
+    background-color: #002A4D;
+}
+#nav-menu-btn .icon-menu{
+    font-size: 24px;
+    color: #FFF;
+}
+#main-nav{
+    background-color: #012F54;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: none;
+    border-top: 1px solid #012F54;
+    padding-bottom: 8px;
+}
+#main-nav .item{
+    clear: both;
+    line-height: 1.5em;
+}
+#main-nav .item a{
+    color: #c2e4fc;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+}
+#main-container{
+    margin-top: 50px;
+}
+.list-box{
+    clear: both;
+    margin-top: 0;
+}
+.list-box .section-title{
+    font-weight: bold;
+    font-size: 22px;
+    color: #333;
+    margin: 0 15px 15px;
+    padding: 0 0 1px;
+    border-bottom: 1px solid #CCC;
+}
+.list-box h2{
+    margin: 0 15px 15px;
+    font-size: 18px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #CCC;
+}
+.list-box .list-pic .item{
+    float: left;
+    width: 50%;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+.list-box .list-pic .pic{
+    margin: 0 15px 12px;
+    height: 120px;
+    overflow: hidden;
+    background: url(/images/demoPhoto.jpg) no-repeat scroll center center;
+    background-size: cover;
+}
+.list-box .list-pic .pic img{
+    width: 100%;
+    height: 100%;
+}
+.list-box .list-pic .update-time, .list-box .list-pic .house-title, .list-box .list-pic .house-price, .list-box .list-pic .house-info{
+    font-size: 14px;
+    color: #666;
+    padding: 2px 0;
+    margin: 0 15px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.list-box .list-pic .house-price{
+    font-weight: bold;
+    font-size: 18px;
+}
+.broker-list .user-name, .broker-list .service-area, .broker-list .company-name{
+    font-size: 14px;
+    color: #666;
+    margin: 2px 15px;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.broker-list .user-name{
+    font-weight: bold;
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.broker-list .user-name a {
+    color: #333;
+}
+.broker-list .service-area {
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+}
+.list-box .list-text .item{
+    margin-bottom: 15px;
+    clear: both;
+}
+.list-box .list-text .title, .list-box .list-text .info{
+    padding: 0 15px;
+    color: #666;
+    font-size: 16px;
+}
+.list-box .list-text .info{
+    display: -webkit-box !important;
+    display: box !important;
+    position:relative;
+    -webkit-box-align:center;
+    box-align:center;
+}
+.list-box .list-text .info .text{
+    position:relative;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+.list-text .list-text .info .uptime{
+    padding-left: 15px;
+    height: 24px;
+    line-height: 24px;
+}
+.list-box .list-text .title{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.list-box .list-text .title a{
+    text-decoration: none;
+    color: #003663;
+}
+.list-box .link-text{
+    line-height: 2em;
+    padding: 0 10px 10px;
+}
+.list-box .link-text a{
+    white-space: nowrap;
+    float: left;
+    margin-right: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #003663;
+}
+footer{
+    font-size: 12px;
+    margin-top: 15px;
+    padding: 10px 15px 25px;
+}
+#footer-link{
+    border-top: 1px solid #CCC;
+    padding: 15px 0;
+    text-align: left;
+}
+#footer-link a{
+    color: #333;
+    text-decoration: none;
+}
+#footer-link span{
+    margin: 0 5px;
+}
+.copyright{
+    color: #666;
+    text-align: left;
+}
+#position {
+    margin-top: 50px;
+    padding: 10px 15px;
+    font-size: 20px;
+	font-weight:bold;
+	color: #666;
+}
+#position a{
+    text-decoration: none;
+}
+.filter-list #position{
+    margin-top: 0;
+}
+.header-split{
+    margin-top: 50px;
+    clear: both;
+}
+.red-phone, .red-phone a{
+    color: red;
+    font-size: 24px;
+}
+/*广告间隔设置*/
+.adlist {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.multi-ad, .single-ad {
+    clear: both;
+    overflow: hidden;
+}
+.multi-ad {
+    margin: 0 15px;
+}
+.single-ad .adList {
+    margin: 0;
+}
+.multi-ad .adList {
+    margin-bottom: 15px;
+}
+#bottom-ad {
+    margin: 0;
+}
+#bottom-ad .adlist {
+    margin-bottom: 0;
+}
+#header-ad-list {
+    text-align: center;
+    margin: 50px 0 0;
+}
+#header-ad-list .adlist {
+    margin-bottom: 0;
+}
+.letter-center {
+    margin: 0 8px;
+}
+.blue-phone {
+    color: #003663;
+}
+.margin15-ad {
+    margin: 0 15px;
+    overflow: hidden;
+}
+.margin0-ad {
+    margin: 0;
+}
+.margin0-ad .adlist {
+    margin: 0;
+}
+#index-top-house .multi-ad {
+    padding: 0 0 15px;
+}
+#page-not-found{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 18px;
+    padding: 45px 0;
+}

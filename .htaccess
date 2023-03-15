@@ -1,0 +1,101 @@
+RewriteEngine On
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^.git - [F,L]
+
+RewriteCond %{HTTP_HOST} ^01fy.cn$ [NC]
+RewriteRule ^(.*)$ https://www.01fy.cn/$1 [L]
+
+RewriteRule ^index\.html$ /index.php [L]
+RewriteRule ^index\.htm$ /citylist.php [L]
+
+RewriteRule ^(rent|xzlcz|spcz|cwcz|cwzr|cfcz|cfzr|ckcz|ckzr)/?$ /rent/index.php?column=$1 [L]
+RewriteRule ^(rent|xzlcz|spcz|cwcz|cwzr|cfcz|cfzr|ckcz|ckzr)/list_(.*?).html /rent/index.php?column=$1&param=$2 [L]
+RewriteRule ^(rent|xzlcz|spcz|cwcz|cwzr|cfcz|cfzr|ckcz|ckzr)/house_(\d+)(x?)\.html$ /rent/detail.php?column=$1&id=$2&member_db=$3 [L]
+RewriteRule ^(rent|xzlcz|spcz|cwcz|cwzr|cfcz|cfzr|ckcz|ckzr)/house_(\d+)_(\d+)\.html$ /rent/detail.php?column=$1&id=$2&member_db=$3 [L]
+
+RewriteRule ^rent_old/?$ /rent/index.php?column=rent_old [L]
+RewriteRule ^rent_old/list_(.*?).html /rent/index.php?column=rent_old&param=$1 [L]
+
+#求租
+RewriteRule ^(qiuzu|xzlqz|spqz|cwqz|cfqz|ckqz)/?$ /qiuzu/index.php?column=$1 [L]
+RewriteRule ^(qiuzu|xzlqz|spqz|cwqz|cfqz|ckqz)/list_(.*?).html /qiuzu/index.php?column=$1&param=$2 [L]
+RewriteRule ^(qiuzu|xzlqz|spqz|cwqz|cfqz|ckqz)/house_(\d+)(x?)\.html$ /qiuzu/detail.php?column=$1&id=$2&member_db=$3 [L]
+RewriteRule ^(qiuzu|xzlqz|spqz|cwqz|cfqz|ckqz)/house_(\d+)_(\d+)\.html$ /qiuzu/detail.php?column=$1&id=$2&member_db=$3 [L]
+
+#出售
+RewriteRule ^(sale|xzlcs|spcs|cwcs|cfcs|ckcs)/?$ /sale/index.php?column=$1 [L]
+RewriteRule ^(sale|xzlcs|spcs|cwcs|cfcs|ckcs)/list_(.*?).html /sale/index.php?column=$1&param=$2 [L]
+RewriteRule ^(sale|xzlcs|spcs|cwcs|cfcs|ckcs)/house_(\d+)(x?)\.html$ /sale/detail.php?column=$1&id=$2&member_db=$3 [L]
+RewriteRule ^(sale|xzlcs|spcs|cwcs|cfcs|ckcs)/house_(\d+)_(\d+)\.html$ /sale/detail.php?column=$1&id=$2&member_db=$3 [L]
+#求购
+RewriteRule ^(qiugou|xzlqg|spqg|cwqg|cfqg|ckqg)/?$ /qiugou/index.php?column=$1 [L]
+RewriteRule ^(qiugou|xzlqg|spqg|cwqg|cfqg|ckqg)/list_(.*?).html /qiugou/index.php?column=$1&param=$2 [L]
+RewriteRule ^(qiugou|xzlqg|spqg|cwqg|cfqg|ckqg)/house_(\d+)(x?)\.html$ /qiugou/detail.php?column=$1&id=$2&member_db=$3 [L]
+RewriteRule ^(qiugou|xzlqg|spqg|cwqg|cfqg|ckqg)/house_(\d+)_(\d+)\.html$ /qiugou/detail.php?column=$1&id=$2&member_db=$3 [L]
+
+#新房
+RewriteRule ^(new|zzx|xzlx|spx)/?$ /new/index.php?column=$1 [L]
+RewriteRule ^(new|zzx|xzlx|spx)/list_(.*?).html /new/index.php?column=$1&param=$2 [L]
+RewriteRule ^(new|zzx|xzlx|spx)/house_(\d+)(x?)\.html$ /new/detail.php?column=$1&id=$2&member_db=$3 [L]
+RewriteRule ^(new|zzx|xzlx|spx)/house_(\d+)_(\d+)\.html$ /new/detail.php?column=$1&id=$2&member_db=$3 [L]
+
+#招聘信息
+RewriteRule ^job/?$ /job/index.php [L]
+RewriteRule ^job/list_(.*?).html /job/index.php?param=$1 [L]
+RewriteRule ^job/detail_(\d+)(x?)\.html$ /job/detail.php?id=$1&member_db=$2 [L]
+RewriteRule ^job/detail_(\d+)_(\d+)\.html$ /job/detail.php?id=$1&member_db=$2 [L]
+
+RewriteRule ^house/(delete|report|done)_(rent|xzlcz|spcz|cwcz|cwzr|sale|xzlcs|spcs|cwcs|qiuzu|xzlqz|spqz|cwqz|qiugou|xzlqg|spqg|cwqg|cfcz|cfzr|ckcz|ckzr|cfcs|ckcs|cfqz|ckqz|cfqg|ckqg|new|zzx|xzlx|spx)_(\d+)(x?)\.html$ /house/$1.php?column=$2&id=$3&member_db=$4 [L]
+RewriteRule ^house/(delete|report|done)_(rent|xzlcz|spcz|cwcz|cwzr|sale|xzlcs|spcs|cwcs|qiuzu|xzlqz|spqz|cwqz|qiugou|xzlqg|spqg|cwqg|cfcz|cfzr|ckcz|ckzr|cfcs|ckcs|cfqz|ckqz|cfqg|ckqg|new|zzx|xzlx|spx)_(\d+)_(\d+)\.html$ /house/$1.php?column=$2&id=$3&member_db=$4 [L]
+
+RewriteRule ^job/(delete|report|done)_(\d+)(x?)\.html$ /house/$1.php?&column=job&id=$2&member_db=$3 [L]
+RewriteRule ^job/(delete|report|done)_(\d+)_(\d+)\.html$ /house/$1.php?&column=job&id=$2&member_db=$3 [L]
+
+RewriteRule ^history/list_(\w+)_(\d+).html$ /history/index.php?column=$1&pageno=$2 [L]
+
+#RewriteRule ^upfile\/(house.*?)-p(.*?)$ /show_image.php?url=$1&param=$2 [L]
+#RewriteRule ^upfile\/(phone.*?)-p(.*?)$ /show_phone.php?url=$1&param=$2 [L]
+
+RewriteRule ^broker/list_(.*?).html /broker/index.php?param=$1 [L]
+RewriteRule ^broker/?$ /broker/index.php [L]
+
+RewriteRule ^about/show-(\d+).html$ /about.php?id=$1 [L]
+RewriteRule ^suggest.html$ /suggest.php [L]
+RewriteRule ^news/article_(\d+).html$ /news/article.php?id=$1 [L]
+RewriteRule ^news/list_(.*?).html /news/index.php?param=$1 [L]
+
+RewriteRule ^shop/(\d+)$ /shop/index.php?id=$1 [L]
+RewriteRule ^shop/contact_(\d+).html$ /shop/contact.php?id=$1 [L]
+RewriteRule ^shop/leave_(\d+).html$ /shop/leave.php?id=$1 [L]
+
+RewriteRule ^shop/rent/list_(\d+)_(\d+)_(.*?).html$ /shop/rent.php?id=$1&pageno=$2&q=$3 [L]
+RewriteRule ^shop/sale/list_(\d+)_(\d+)_(.*?).html$ /shop/sale.php?id=$1&pageno=$2&q=$3 [L]
+
+RewriteRule ^about/show-(\d+).html$ /about.php?id=$1 [L]
+RewriteRule ^suggest.html$ /suggest.php [L]
+RewriteRule ^sitemap.xml$ /sitemap/sitemap.php [L]
+RewriteRule ^tools/broker.html /tools/broker.php [L]
+RewriteRule ^upfile/qrcode.jpg /order/qrcode.php [L]
+
+ErrorDocument 404 /404.php
+
+<FilesMatch "\.(jpg|jpeg|png|gif|js|css|ico)$">
+Header set Cache-Control "max-age=31536000"
+#ExpiresDefault "access plus 1 year"
+########################################################
+RewriteEngine On
+RewriteBase /
+
+RewriteRule temp/(data|db|robotlog|tplrules|errpage|logs|session)/(.*)$ - [F,NC]
+RewriteRule template/(.*)\.html$ - [F,NC]
+RewriteRule (temp|template|core|static)/(.*).(php)$ - [F,NC]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+
+RewriteRule ^(.*)$ index.php\?$1 [QSA,PT,L]
+</FilesMatch>

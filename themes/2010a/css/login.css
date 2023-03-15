@@ -1,0 +1,82 @@
+#box { clear:both; float:none; width:1007px; margin:10px auto; }
+
+/* registerFormBroker */
+.reg { width:700px; border-bottom:1px solid #ccc; border-left:1px solid #ccc; border-right:1px solid #ccc; border-top:1px solid #ccc; clear:both; margin:50px auto 0; }
+.reg thead td div { color:#f90; padding-top:20px; font-size:16px; font-weight:bold; text-align:center; padding-bottom:13px; margin-bottom:1px; float:none; background:url(../images/dotBg.gif) repeat-x left bottom; }
+.reg tbody tr.mouseOn td { border:solid #ffd885; border-width:1px 0; background:#fff3db; }
+.reg tbody tr.mouseOn td span.cRed { color:#f90; }
+.reg tbody tr.mouseOn td.title { border-left:1px solid #ffd885; }
+.reg tbody tr.mouseOn td.infoText { border-right:1px solid #ffd885; }
+.reg tbody td { padding:5px 0;  }
+.reg tbody td input { width:177px; height:20px; padding:5px 4px 0; margin-left:8px; border:1px solid #ccc; }
+.reg tbody td input.registerVelidate { width:80px; }
+.reg tbody td.title { width:150px; font-size:14px; text-align:right; line-height:25px; border-left:1px solid #fff; }
+.reg tbody td.infoText { width:350px; border-right:1px solid #fff; }
+.reg tbody td.infoText div.infoBox { color:#666; padding:3px 10px 0; line-height:19px; }
+.reg tbody td.infoText div.okBox { line-height:15px; color:#090; padding:4px 4px 4px 28px; background:url(../images/formConfirmTrue.gif) no-repeat 8px 2px; }
+.reg tbody td.infoText div.noBox { line-height:15px; color:#f00; padding:4px 4px 4px 28px; background:url(../images/formConfirmFalse.gif) no-repeat 8px 2px; }
+.reg tfoot td.serviceTerm { padding-left:160px; padding-top:10px; }
+.reg tfoot td.serviceTerm a { color:#690; text-decoration:underline; }
+.reg tfoot td.serviceTerm a:hover { color:#f90; }
+.reg tfoot tr.okReg td { text-align:center; padding:18px 0 10px;}
+.reg tfoot tr.okReg td input { width:162px; height:35px; font-size:16px; color:#FFF; background:#F90; }
+.errMsg{color:#f90; font-size:12px; margin-left:5px;}
+/* registerFormBroker End */
+
+/* register */
+.pagesRegister { clear:both; float:left; width:100%; padding:60px 130px; }
+.regLink { float:left; display:block; display:inline; }
+.regLink li { float:left; margin:0 10px; display:inline; }
+.regLink li a { width:224px; height:211px; font-size:14px; display:block; background:url(../images/regLinkBg.gif) no-repeat -224px 0; }
+.regLink li a:hover { text-decoration:none; background-position:0 0; }
+.regLink li a p { color:#666; padding:0 0 10px 20px; }
+.regLink li a p.title { color:#f90; font-weight:bold; padding:30px 0 18px 20px; }
+.regLink li a p.regText { color:#690; font-weight:bold; padding:8px 0 0 20px; }
+/* register End */
+
+/* login,forgetPsw */
+.login_left { clear:both; float:left; padding-left:120px; display:inline;}
+.login_left ul { width:350px; margin-top:40px; }
+.login_left ul li { float:left; width:100%; font-size:14px; margin-bottom:12px; }
+.login_left ul li.title { font-size:16px; font-weight:bold; color:#0054C1; margin-bottom:25px; margin-left:50px; display:inline; }
+.login_left ul li.login_inp input { width:160px; height:18px; padding:2px; margin-left:15px; border:1px solid #bababa; }
+.login_left ul li span { color:#0054C1; font-size:12px; margin-left:10px; }
+.login_left ul li p { color:#999; font-size:12px; margin-left:57px; }
+.login_left ul li.login_velidate input { width:90px; height:18px; padding:2px; margin-left:15px; border:1px solid #bababa; }
+.login_left ul li.login_velidate a { color:#999; }
+.login_left ul li.login_btn { margin-left:57px; display:inline; }
+.login_left ul li.login_btn input { width:80px; height:25px; padding-top:3px; border:1px solid #b7db4a; background:url(../images/memberTabBgkLinkOn.gif); }
+.login_left ul li.login_btn a { color:#999; }
+.login_check span { display:block; width:160px; height:15px; color:#f90; font-size:12px; padding-left:5px; padding-top:7px; padding-bottom:3px; border:1px solid #fbc393; background:#ffd; margin-left:55px!important; }
+
+.login_right { float:left; padding-left:40px; margin-top:20px; background:url(../images/loginBg.gif) no-repeat 0 -10px; }
+.login_right .box { clear:both; width:300px; border:1px solid #fbc393; padding:4px 0 16px; background:#ffd; }
+.login_right .box ul { padding-left:18px; }
+.login_right .box ul li { color:#666; padding-left:16px; margin-top:12px; float:left; width:100%; clear:both; background:url(../images/loginListBg.gif) no-repeat 0 3px; }
+.login_right .title { font-weight:bold; font-size:14px; float:left; width:100%; clear:both; margin:20px 0 10px; }
+.login_right .title a { color:#0054C1; text-decoration:none; }
+/* login,forgetPsw end */
+
+.loginSkip { width:100%; padding-top:55px; }
+.loginSkip p { text-align:center; margin-bottom:16px; }
+.loginSkip img { margin-bottom:-14px; }
+.loginSkip .title { color:#f00; font-size:14px; font-weight:bold; margin-bottom:32px; }
+.loginSkip p span { color:#f93; font-size:14px; }
+.loginSkip_br { width:100%; height:80px; clear:both; }
+#getpwd .box ul li{
+	float:none;
+	width:auto;
+}
+.login_velidate{
+	position:relative;
+}
+#vaildimg{
+	position:relative;
+	top:6px;
+}
+.clear{
+	clear:both;
+}
+.pages{
+	padding:35px 0 70px;;
+}
