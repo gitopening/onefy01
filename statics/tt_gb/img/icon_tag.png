@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="gb2312">
+	<title>404</title>
+	<link href="//www.weite.com/statics/tt_gb/skin_css/gb.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="//www.weite.com/statics/js/jquery-1.8.3.min.js"></script>
+	<script src="//www.weite.com/statics/js/searchword.js"></script>
+</head>
+
+<body class="w1000">
+<div class="head common">
+
+
+	<div class="header">
+		<div class="logo"><a href="/"><img src="//www.weite.com/statics/tt_gb/skin_img/logo.png" alt="微特软件园"></a></div>
+		<p class="lsrj"></p>
+	</div>
+</div>
+
+<div id="main1k">
+
+	<div class="error_box">
+		<img class="pic" src="/statics/tt_gb/skin_img/404.png" alt="">
+		<div class="tip"><span class="count"><span id="count">5</span>S</span>后自动返回首页</div>
+		<a href="/" class="btn btn-green">返回首页</a>
+	</div>
+
+</div>
+
+
+
+<script language="javascript" type="text/javascript">
+	search_url = '//www.weite.com/';
+
+	$(document).ready(function(){
+
+		$("#dosubmit").click(function() {
+			var keywords=$(".text").val();
+			var search_type=$("#dosubmit").attr('search_type');
+			if(search_type == null){
+				search_type = 'pc';
+			}
+			//alert(search_type);return;
+			//var url = '//'+window.location.host;
+			var url = search_url+"/search/?q="+keywords+"&pdtc=2&search_type="+search_type;
+			//window.open(url);
+			window.location.href=url;
+			/*			 window.location.href="?m=lc_search&c=index&a=init&keywords="+keywords;
+			*/
+		});
+
+	});
+
+	$(".text").keydown(function(e){
+		if(e.keyCode==13){
+			var keywords=$(".text").val();
+			var search_type=$("#dosubmit").attr('search_type');
+			if(search_type == null){
+				search_type = 'pc';
+			}
+			//alert(search_type);return;
+			//var url = '//'+window.location.host;
+			var url = search_url+"/search/?q="+keywords+"&pdtc=2&search_type="+search_type;
+			//window.open(url);
+			window.location.href=url;
+			/*			 window.location.href="?m=lc_search&c=index&a=init&keywords="+keywords;
+			*/
+		}
+	});
+	var $count = $('#count');
+	function countDown(secs){
+		// tiao.innerHTML=secs;
+		$count.html(secs)
+		if(--secs>0){
+			setTimeout("countDown("+secs+")",1000);
+		}else{
+			location.href = "//www.weite.com/";
+		}
+	}
+	countDown(5);
+</script>
+
+</body>
+
+</html>
