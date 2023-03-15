@@ -119,6 +119,20 @@ $web_config = array(
         'db_master_num' => 1, //写服务器数量，默认为1
         'db_slave_no' => '' //指定从服务器序号，服务器编号从0开始
     ),
+    'zhoujb_db' => array(
+            'db_type' => 'mysql',
+            'db_host' => '127.0.0.1',
+            'db_port' => '3306',
+            'db_user' => 'zhoujingbao_com',
+            'db_password' => 'FLm8JkPnrpjJsxCf',
+            'db_name' => 'zhoujingbao_com',
+            'db_prefix' => 'jianzhanzj_com_',
+            'db_charset' => 'utf8mb4',
+            'db_deploy_type' => 1, //0单一服务器  1分布式服务器
+            'db_rw_separate' => true, //是否读写分离
+            'db_master_num' => 1, //写服务器数量，默认为1
+            'db_slave_no' => '' //指定从服务器序号，服务器编号从0开始
+        ),
     'cache' => array(
         'type' => 'memcached',
         'servers' => array(
