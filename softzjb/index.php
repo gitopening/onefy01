@@ -13,7 +13,7 @@ $zhoujb_query = new DbQueryForMysql(GetConfig('zhoujb_db'));
 $zhoujbao = new ZhouJBao($zhoujb_query);
 $main_yxtj111_list = $zhoujbao->main_yxtj111();
 // $main_yxtj111_list = $zhoujbao->getstringok();
-$main_yxtj111_title = $zhoujbao->getEcmsGame(1);
+//$main_yxtj111_title = $zhoujbao->getEcmsGame(1);
 // $member = new Member($member_query);
 // $member_id = $member->getAuthInfo('id');
 
@@ -86,7 +86,7 @@ $main_yxtj111_title = $zhoujbao->getEcmsGame(1);
     <?php foreach($main_yxtj111_list as $key => $item){ ?>
 
       <li><a href="<?php echo $item['titleurl'];?>" target="_blank">
-      <img src="<?php echo !empty($item['titleurl']) ? '$item[\'titleurl\']' : '/d/file/20200907/mmzvvt0rzu0.png';?>" alt="<?php echo $item['title'];?>">
+      <img src="<?php echo !empty($item['titlepic']) ? $item['titlepic'] : '/d/file/20200907/mmzvvt0rzu0.png';?>" alt="<?php echo $item['title'];?>">
       <em class="cover_80"></em><span><?php echo $item['title'];?></span></a></li>
 
       <?php } ?>
