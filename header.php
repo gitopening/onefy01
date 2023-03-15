@@ -132,6 +132,16 @@ if ($website_all_top_ad && $currentColumn != 'citylist') {
                     <li<?php if ($currentColumn == 'news') {
                         echo ' class="on"';
                     } ?>><a href="//www.<?php echo $cfg['page']['basehost'];?>/news/" style="border-right:none;">资讯</a></li>
+                    <li class="menu<?php if ($currentColumn == 'softzjb') {
+                                                    echo ' on';
+                                                } ?>">
+                                                    <a href="/softzjb/">软件游戏<span class="caret"></span></a>
+                                                    <div class="sub-menu">
+                                                        <div class="item"><a href="/softmenu/soft_2_0_2_3_.html">手机电脑软件</a></div>
+                                                        <div class="item"><a href="/gamemenu/soft_2_0_2_2_.html">桌游手游</a></div>
+
+                                                    </div>
+                                                </li>
                     <div class="clear"></div>
                 </ul>
             </div>
