@@ -9,7 +9,11 @@ $now_time = time();
 //  print "<script language=\"JavaScript\">
 //  alert(\"运行结束10\");</script>";
 //  die;
-$member_query = new DbQueryForMysql(GetConfig('zhoujb_db'));
+$zhoujb_query = new DbQueryForMysql(GetConfig('zhoujb_db'));
+$zhoujbao = new ZhouJBao($zhoujb_query);
+$main_yxtj111_list = $zhoujbao->main_yxtj111();
+// $main_yxtj111_list = $zhoujbao->getstringok();
+$main_yxtj111_title = $zhoujbao->getEcmsGame(1);
 // $member = new Member($member_query);
 // $member_id = $member->getAuthInfo('id');
 
@@ -21,9 +25,14 @@ $member_query = new DbQueryForMysql(GetConfig('zhoujb_db'));
         //     require_once(dirname(dirname(__FILE__)) . '/404.php');
         //     exit();
         // }
-        // print_r($member_id.'<br><br><br>');
+        // print_r(gettype($zhoujb_query).'<br><br><br>');
+                // print_r(gettype($main_yxtj111_title).'<br><br><br>');
+                //   print_r(count($main_yxtj111_list).'<br><br><br>');
+                // print_r($main_yxtj111_title.'<br><br><br>');
+                // var_dump($main_yxtj111_list);
 
-        //   print_r("----96-22---".$member_id);
+
+        //   print_r("----96-22---".$zhoujbao);
 
         // print "<script language=\"JavaScript\">
         //             alert(\"运行结束27\");</script>";
@@ -73,8 +82,16 @@ $member_query = new DbQueryForMysql(GetConfig('zhoujb_db'));
 <div id="main">
   <div class="main_yxtj 111">
     <ul>
-      <li><a href="/game/10.html" target="_blank"><img src="/d/file/20200907/ddcz3sszahb.jpg" alt="猎手之王安卓版"><em class="cover_80"></em><span>猎手之王安卓版</span></a></li>
+       
+    <?php foreach($main_yxtj111_list as $key => $item){ ?>
 
+      <li><a href="<?php echo $item['titleurl'];?>" target="_blank">
+      <img src="<?php echo !empty($item['titleurl']) ? '$item[\'titleurl\']' : '/d/file/20200907/mmzvvt0rzu0.png';?>" alt="<?php echo $item['title'];?>">
+      <em class="cover_80"></em><span><?php echo $item['title'];?></span></a></li>
+
+      <?php } ?>
+	 
+                
       <li><a href="/game/11.html" target="_blank"><img src="/d/file/20200907/mmzvvt0rzu0.png" alt="妖神记手游官网版"><em class="cover_80"></em><span>妖神记手游官网版</span></a></li>
 
       <li><a href="/game/661.html" target="_blank"><img src="/d/file/20200906/nj3pogfuupo.png" alt="烟雨江湖官方版"><em class="cover_80"></em><span>烟雨江湖官方版</span></a></li>
