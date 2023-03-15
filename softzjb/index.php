@@ -21,9 +21,9 @@ $member_query = new DbQueryForMysql(GetConfig('zhoujb_db'));
         //     require_once(dirname(dirname(__FILE__)) . '/404.php');
         //     exit();
         // }
-        print_r($member_id.'<br><br><br>');
+        // print_r($member_id.'<br><br><br>');
 
-          print_r("----96-22---".$member_id);
+        //   print_r("----96-22---".$member_id);
 
         // print "<script language=\"JavaScript\">
         //             alert(\"运行结束27\");</script>";
@@ -55,18 +55,7 @@ $member_query = new DbQueryForMysql(GetConfig('zhoujb_db'));
   <div class="header">
     <div class="logo"><a href="/"><img src="/statics/tt_gb/skin_img/logo.png" alt="周景宝下载"></a></div>
     <p class="lsrj"></p>
-    <div class="sous">
-      <div class="search">
-        <span class="icon"></span>
-        <form action="/e/search/index.php" method="post" target="_blank">
-          <input type="text" class="text" name="keyboard" size="30" value="" placeholder="全民K歌"/>
-          <input name="searchbtn" type="submit" class="button" value="搜索" search_type ="init"/>
-          <input type="hidden" name="show" value="title">
-          <input type="hidden" name="tempid" value="1" >
-          <input type="hidden" name="tbname" value="game">
-        </form>
-      </div>
-    </div>
+
   </div>
   <div class="nav_box">
     <div class="nav">
