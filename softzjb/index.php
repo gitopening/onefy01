@@ -90,28 +90,7 @@ $main_yxtj111_list = $zhoujbao->main_yxtj111();
       <em class="cover_80"></em><span><?php echo $item['title'];?></span></a></li>
 
       <?php } ?>
-	 
-                
-      <li><a href="/game/11.html" target="_blank"><img src="/d/file/20200907/mmzvvt0rzu0.png" alt="妖神记手游官网版"><em class="cover_80"></em><span>妖神记手游官网版</span></a></li>
-
-      <li><a href="/game/661.html" target="_blank"><img src="/d/file/20200906/nj3pogfuupo.png" alt="烟雨江湖官方版"><em class="cover_80"></em><span>烟雨江湖官方版</span></a></li>
-
-      <li><a href="/game/662.html" target="_blank"><img src="/d/file/20200906/jiglnplsdqj.png" alt="六龙争霸"><em class="cover_80"></em><span>六龙争霸</span></a></li>
-
-      <li><a href="/game/7.html" target="_blank"><img src="/d/file/20200907/t2eyzi40cqe.png" alt="猎手之王体验服"><em class="cover_80"></em><span>猎手之王体验服</span></a></li>
-
-      <li><a href="/app/63.html" target="_blank"><img src="/d/file/20200907/qfvtteiq534.png" alt="健康管家"><em class="cover_80"></em><span>健康管家</span></a></li>
-
-      <li><a href="/app/22.html" target="_blank"><img src="/d/file/20200907/d2re0yuf2wt.png" alt="爱动健身app"><em class="cover_80"></em><span>爱动健身app</span></a></li>
-
-      <li><a href="/app/7.html" target="_blank"><img src="/d/file/20200907/q1ojqxtkpqu.png" alt="建工计算器手机版"><em class="cover_80"></em><span>建工计算器手机版</span></a></li>
-
-      <li><a href="/app/18.html" target="_blank"><img src="/d/file/20200907/ag4oj2e11qm.png" alt="薰衣草小希动态壁纸"><em class="cover_80"></em><span>薰衣草小希动态壁纸</span></a></li>
-
-      <li><a href="/app/4.html" target="_blank"><img src="/d/file/20200907/5uzf4zhco3u.jpg" alt="西窗烛app"><em class="cover_80"></em><span>西窗烛app</span></a></li>
-
-
-    </ul>
+	</ul>
   </div>
   <div class="main_menu">
     <dl>
